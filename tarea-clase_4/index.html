@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Formulario</title>
+	</head>
+	<body>
+		<section>
+			<h1 class="page-title">Formulario de contacto</h1>
+
+			<div class="btn-style-container">
+				<button
+					class="btn-style-sin-Contraste"
+					aria-describedby="resultMessage"
+					id="sinContraste-btn"
+				>
+					Estilo por defecto
+				</button>
+				<button
+					class="btn-style-contraste"
+					aria-describedby="resultMessage"
+					id="conContraste-btn"
+				>
+					Alto contraste
+				</button>
+			</div>
+
+			<!-- Uso aria-labelledby y aria-describedby para mejorar accesibilidad con NVDA -->
+			<div class="form-container">
+				<form class="form" id="contact-form">
+					<label class="form-label" id="nombre-label" for="nombre"
+						>Nombre:
+					</label>
+					<input
+						class="form-input"
+						type="text"
+						oninput="removeNumbers(this)"
+						name="nombre"
+						id="nombre-input"
+						aria-labelledby="nombre-label"
+						aria-describedby="resultMessage"
+					/>
+
+					<label class="form-label" id="apellido-label" for="apellido"
+						>Apellido:
+					</label>
+					<input
+						class="form-input"
+						type="text"
+						oninput="removeNumbers(this)"
+						name="apellido"
+						id="apellido-input"
+						aria-labelledby="apellido-label"
+						aria-describedby="resultMessage"
+					/>
+
+					<label class="form-label" id="email-label" for="email"
+						>Email:
+					</label>
+					<input
+						class="form-input"
+						type="email"
+						name="email"
+						id="email-input"
+						aria-labelledby="email-label"
+						aria-describedby="resultMessage"
+					/>
+
+					<label class="form-label" id="born-label" for="born"
+						>Fecha de Nacimiento:
+					</label>
+					<input
+						class="form-input"
+						type="date"
+						name="born"
+						id="born-input"
+						aria-labelledby="born-label"
+						aria-describedby="resultMessage"
+					/>
+
+					<label class="form-label" id="country-label" for="country"
+						>País de Residencia:
+					</label>
+					<input
+						class="form-input"
+						type="text"
+						oninput="removeNumbers(this)"
+						name="country"
+						id="country-input"
+						aria-labelledby="country-label"
+						aria-describedby="resultMessage"
+					/>
+
+					<input
+						class="form-btn"
+						id="form-submit-btn"
+						aria-describedby="resultMessage"
+						type="submit"
+					/>
+					<input
+						class="form-btn reset-btn"
+						id="form-reset-btn"
+						aria-describedby="resultMessage"
+						type="reset"
+					/>
+				</form>
+
+				<div id="resultMessage"></div>
+			</div>
+		</section>
+
+		<script src="./js/index.js"></script>
+	</body>
+</html>
