@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="formulario de contacto" />
+		<meta
+			name="keywords"
+			content="formulario de contacto, bootcamp Cilsa, HTML, CSS, Javascript"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+			crossorigin="anonymous"
+		/>
+		<style>
+			body.contrast {
+				background-color: black;
+				color: white;
+			}
+		</style>
+
+		<title>Formulario</title>
+	</head>
+
+	<body>
+		<section>
+			<h1
+				class="text-center bg-success p-2 bg-opacity-50"
+				id="titulo-principal"
+			>
+				Formulario de contacto
+			</h1>
+
+			<button
+				class="btn btn-dark ms-3 mb-4 mt-4"
+				id="cambiar-contraste"
+				onclick="toggleContrast()"
+			>
+				Cambiar contraste
+			</button>
+
+			<div class="container">
+				<form id="formulario-de-contacto">
+					<div class="row">
+						<div class="col-md-6 col-lg-6 mb-3">
+							<div class="input-group">
+								<label class="input-group-text" id="nombre-label" for="nombre"
+									>Nombre:</label
+								>
+								<input
+									class="form-control"
+									type="text"
+									name="nombre"
+									id="nombre"
+									aria-labelledby="nombre-label"
+									required
+								/>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-6 mb-3">
+							<div class="input-group">
+								<label
+									class="input-group-text"
+									id="apellido-label"
+									for="apellido"
+									>Apellido:</label
+								>
+								<input
+									class="form-control"
+									type="text"
+									name="apellido"
+									id="apellido"
+									aria-labelledby="apellido-label"
+									required
+								/>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12 col-lg-6 mb-3">
+							<div class="input-group">
+								<label class="input-group-text" id="email-label" for="email"
+									>Email:</label
+								>
+								<input
+									class="form-control"
+									type="email"
+									name="email"
+									id="email"
+									aria-labelledby="email-label"
+									required
+								/>
+							</div>
+						</div>
+
+						<div class="col-md-12 col-lg-6 mb-3">
+							<div class="input-group">
+								<label class="input-group-text" id="born-label" for="born"
+									>Fecha de Nacimiento:</label
+								>
+								<input
+									class="form-control"
+									type="date"
+									name="born"
+									id="fecha-de-nacimiento"
+									aria-labelledby="born-label"
+									required
+								/>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-6 mb-3">
+							<div class="input-group">
+								<label class="input-group-text" id="country-label" for="country"
+									>País de Residencia:</label
+								>
+								<input
+									class="form-control"
+									type="text"
+									name="country"
+									id="pais-de-residencia"
+									aria-labelledby="country-label"
+									required
+								/>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<input
+							class="col-6 col-md-5 col-lg-3 btn btn-success ms-2 mb-3"
+							id="enviar"
+							type="submit"
+						/>
+
+						<input
+							class="col-6 col-md-5 col-lg-3 btn btn-secondary ms-2 mb-3"
+							id="restablecer"
+							type="reset"
+						/>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			function toggleContrast() {
+				document.body.classList.toggle('contrast');
+			}
+		</script>
+	</body>
+</html>
