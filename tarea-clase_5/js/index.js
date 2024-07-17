@@ -80,7 +80,7 @@ const validField = () => {
 	return true;
 };
 
-// Valida que no se ingresen números en los campos de texto
+// No permite que se ingresen números en los campos de texto
 // Se ejecuta directamente en las etiquetas input del tipo text
 const removeNumbers = (input) => {
 	let content = input.value;
