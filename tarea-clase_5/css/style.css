@@ -1,0 +1,103 @@
+/* Generales */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	background-color: #dbdbdb;
+}
+
+/* Formulario */
+form {
+	margin: 1rem;
+	border-radius: 8px;
+	padding: 1rem;
+	background-color: rgb(54, 132, 180);
+	border: 1px solid #fff;
+	box-shadow: 3px 3px #3f3c3c;
+}
+
+.message_info {
+	margin: 1rem;
+	border-radius: 5px;
+	border: #000 1px solid;
+	padding: 1rem;
+	font-size: small;
+	font-weight: 700;
+	text-align: center;
+	background-color: #fff;
+	color: #000;
+}
+
+/* Botones */
+.btn-style-container {
+	margin-bottom: 2rem;
+	margin-left: 1rem;
+}
+
+.btn-style-sin-contraste,
+.btn-style-contraste,
+.form-btn {
+	padding: 8px;
+	border-radius: 5px;
+	box-shadow: 1px 2px 3px #2b2b2b;
+}
+
+.btn-style-sin-contraste,
+.btn-style-contraste {
+	background-color: #fff;
+	color: #000;
+}
+
+.btn-style-sin-contraste:hover,
+.btn-style-contraste:hover {
+	background-color: #000;
+	color: #fff;
+	box-shadow: 2px 2px 3px #2b2b2b;
+}
+
+.btn-style-contraste {
+	margin-left: 0.5rem;
+}
+
+.form-btn {
+	background-color: rgb(0, 93, 180);
+	color: #fff;
+	display: inline;
+}
+
+.form-btn:hover {
+	box-shadow: 3px 3px 2px #2b2b2b;
+	border: #000 1px solid;
+}
+
+.reset-btn {
+	margin-left: 1rem;
+	background-color: rgb(170, 170, 170);
+	color: #000;
+}
+
+/* Alto Contraste */
+
+/* Estas clases se agregan desde javascript */
+.contrast-high {
+	background-color: #000;
+	color: #fff;
+}
+
+.contrast-high-btn {
+	background-color: #000;
+	border: #fff 1px solid;
+	color: #fff;
+}
+
+.contrast-high-btn:hover {
+	background-color: #fff;
+	color: #000;
+	box-shadow: 2px 2px 3px #2b2b2b;
+}
